@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://csk3hve22jvl0"]
+
+[ext_resource type="Script" uid="uid://cp0tk6te2s2wu" path="res://Scripts/touch_camera_controller.gd" id="1_bt4ei"]
+
+[node name="TouchCameraController" type="Camera2D"]
+limit_left = -200
+limit_top = -200
+limit_right = 1200
+limit_bottom = 800
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 1.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+editor_draw_limits = true
+script = ExtResource("1_bt4ei")
+can_pan = true
+can_zoom = true

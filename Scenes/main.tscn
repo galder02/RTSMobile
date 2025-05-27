@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://cubvmxol7fieb"]
+
+[ext_resource type="Script" uid="uid://c81ie0s4hx2ys" path="res://Scripts/main.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cd5s7jygg1ej6" path="res://art/Tiles/Dirt_01.png" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://blij7gwqogyve" path="res://Scenes/marine.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://csk3hve22jvl0" path="res://Scenes/touch_camera_controller.tscn" id="5_lquwl"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_h2yge")
+
+[node name="Dirt01" type="Sprite2D" parent="."]
+position = Vector2(-132, 99)
+texture = ExtResource("2_1bvp3")
+
+[node name="Dirt02" type="Sprite2D" parent="."]
+position = Vector2(380, 99)
+texture = ExtResource("2_1bvp3")
+
+[node name="Dirt03" type="Sprite2D" parent="."]
+position = Vector2(-132, 611)
+texture = ExtResource("2_1bvp3")
+
+[node name="Dirt04" type="Sprite2D" parent="."]
+position = Vector2(380, 611)
+texture = ExtResource("2_1bvp3")
+
+[node name="Dirt05" type="Sprite2D" parent="."]
+position = Vector2(892, 99)
+texture = ExtResource("2_1bvp3")
+
+[node name="Dirt06" type="Sprite2D" parent="."]
+position = Vector2(1404, 99)
+texture = ExtResource("2_1bvp3")
+
+[node name="Dirt07" type="Sprite2D" parent="."]
+position = Vector2(892, 611)
+texture = ExtResource("2_1bvp3")
+
+[node name="Dirt08" type="Sprite2D" parent="."]
+position = Vector2(1404, 611)
+texture = ExtResource("2_1bvp3")
+
+[node name="TouchCameraController" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(578, 323)
+
+[node name="Marine" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(242, 295)
+
+[node name="Marine2" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(432, 222)
+
+[node name="Marine4" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(515, 512)
+
+[node name="Marine3" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(247, 522)
